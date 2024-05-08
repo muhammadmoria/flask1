@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mathematics Table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #676565;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+    }
+    
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    table {
+        width: 100%;
+        max-width: 600px;
+        border-collapse: collapse;
+        margin: 20px auto;
+        background-color: #ac9898;
+        box-shadow: 0 0 50px rgba(61, 59, 59, 0.1);
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 5
+        px solid #040404;
+    }
+    
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Square</th>
+            <th>Cube</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- JavaScript loop to generate rows -->
+        <script>
+            for (var i = 1; i <= 100; i++) {
+                document.write("<tr>");
+                document.write("<td>" + i + "</td>");
+                document.write("<td>" + (i * i) + "</td>");
+                document.write("<td>" + (i * i * i) + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </tbody>
+</table>
+
+</body>
+</html>

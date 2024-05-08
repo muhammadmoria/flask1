@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup Page</title>
+    <style>
+        /* CSS for header */
+        header {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* CSS for main content */
+        main {
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(111, 0, 255);
+        }
+
+        /* CSS for form */
+        fieldset {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        label {
+            color: black;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8b008b;
+        }
+
+        h3 {
+            color: purple;
+        }
+
+        /* CSS for footer */
+        footer {
+            background-color: purple;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="./home.html">Home</a>
+        <a href="./about.html">About US</a>
+        <a href="./contact.html">Contact Us</a>
+        <a href="./login.html">Login</a>
+        <a href="#">Signup</a>
+    </header>
+
+    <!-- Registration Form -->
+    <main>
+        <h1>Register Yourself</h1>
+        <fieldset>
+            <form>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Type your name"><br>
+                <label for="email">Email</label>   
+                <input id="email" type="email" placeholder="Type your email"><br>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Type your Password"><br>
+                <label for="confirm_password">Confirm Password</label>
+                <input id="confirm_password" type="password" placeholder="Type your Password again"><br>
+                <button>Submit</button>
+            </form>
+        </fieldset>
+        <h3>Already have an account? Click here to <a href="./login.html">Login</a></h3>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        All rights reserved 2023
+    </footer>
+</body>
+
+</html>
+m
